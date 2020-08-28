@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import './App.css';
+import Home from './containers/Pages/Home/Home';
+import AddPost from './containers/Pages/AddPost/AddPost';
+import Contacts from './components/Pages/Contacts/Contacts';
+import About from './components/Pages/About/About';
+import SinglePost from './containers/Pages/SinglePost/SinglePost'
+import HeaderNavigation from './components/UI/HeaderNavigation/HeaderNavigation';
+import EditPost from './containers/Pages/EditPost/EditPost';
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="back">
+         <BrowserRouter>
+      <HeaderNavigation/>
+       <Switch>
+         <Route path="/" exact component={Home}/>
+         <Route path="/posts/add" component={AddPost}/>
+         <Route path="/posts/:id/edit/" component={EditPost}/>
+         <Route path="/posts/:id/" component={SinglePost}/>
+         <Route path="/about" component={About}/>
+         <Route path="/contacts" component={Contacts}
+        />
+       </Switch>
+      </BrowserRouter>
+      </div>
+     
     </div>
   );
 }
