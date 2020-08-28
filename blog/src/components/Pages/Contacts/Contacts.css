@@ -1,0 +1,20 @@
+.contacts-div{
+    margin-top: 200px;
+    height: 65vh;
+    color: white;
+}
+
+.contacts-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.contacts-list{
+    list-style: none;
+    margin: 0;
+}
+
+.contacts-list-item{
+    padding: 10px 0;
+}
