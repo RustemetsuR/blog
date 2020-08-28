@@ -1,0 +1,41 @@
+.edit-post-div{
+    height: 100%;
+}
+
+.edit-post-div-inner{
+    text-align: center;
+}
+
+.edit-post-form-elem{
+    background: var(--darker-blue);
+    border: 2px solid var(--lighter-blue);
+    color: white;
+    padding: 20px;
+    display: block;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.edit-post-inputs::placeholder{
+    color: white;
+}
+
+.edit-post-input{
+    width: 40%;
+}
+
+.edit-post-textarea{
+    width: 90%;
+    resize: none;
+    word-break: break-all;
+    height: 400px;
+}
+
+.edit-post-btn{
+    display: block;
+    padding: 5px 10px;
+    width: 80px;
+    margin: 10px auto;
+    cursor: pointer;
+    text-transform: uppercase;
+}

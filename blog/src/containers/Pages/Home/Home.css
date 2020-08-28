@@ -1,0 +1,5 @@
+.home-inner{
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 50vh;
+}
